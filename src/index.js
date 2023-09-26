@@ -5,7 +5,8 @@ import App from "./App";
 // import reportWebVitals from "./reportWebVitals";
 
 // Bootstrap CSS import 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+    <App />, document.getElementById("root"));

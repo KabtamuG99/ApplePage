@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-
-// https://www.googleapis.com/youtube/v3/search?key=AIzaSyB4xNW_TeLDTO9tKxmHQAZskoy9Na0sxR0&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=1
-
+import "./YouTube.css"
+ 
 class Youtube extends Component {
   constructor() {
     super();
@@ -12,7 +11,7 @@ class Youtube extends Component {
 
   componentDidMount() {
     fetch(
-      "https://www.googleapis.com/youtube/v3/search?key=AIzaSyBv_MveWxmNKF-fAAEDIy3qAIWtt0-YM1M&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=6"
+     " https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=9&order=date&key=AIzaSyApkrDGDBTxYc1KYGttpnaY_mNkv6bhv1U"
     )
       .then((response) => response.json())
       .then((data) => {

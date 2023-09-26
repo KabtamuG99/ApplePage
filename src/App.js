@@ -21,6 +21,14 @@ import Productpage from "./Pages/Productpage/Productpage";
 
 // import general css
 import "./css/styles.css";
+import Ipad from "./Pages/Ipad/Ipad";
+import Watch from "./Pages/Watch/Watch";
+import Tv from "./Pages/tv/Tv";
+import Music from "./Pages/music/Music";
+import Support from "./Pages/support/Support";
+
+
+
 
 function App() {
   return (
@@ -32,8 +40,14 @@ function App() {
           <Route path="/mac" exact component={Mac} />
           <Route path="/iphone" exact component={Iphone} />
           <Route path="/iphone/:pid" exact component={Productpage} />
-          <Route path="/" component={Four04} />
+          <Route path="/tv" exact component={Tv} />
+          <Route path="/Music" exact component={Music} />
+          <Route path="/watch" exact component={Watch} />
+          <Route path="/support" exact component={Support} />
+          <Route path="/ipad" exact component={Ipad} />
+         
         </Switch>
+       
         <Footer />
       </div>
     </Router>
